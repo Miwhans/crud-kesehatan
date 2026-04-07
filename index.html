@@ -1,27 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRUD Data Pasien</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<h1>TEST CI/CD BERHASIL</h1>
+<div class="container">
+  <h1>🏥 Data Pasien</h1>
 
-<h2>Form Data Pasien</h2>
+  <div class="card">
+    <h2>Tambah Data</h2>
+    <input type="text" id="nama" placeholder="Nama">
+    <input type="number" id="umur" placeholder="Umur">
+    <input type="text" id="diagnosa" placeholder="Diagnosa">
+    <button onclick="tambahData()">Tambah</button>
+  </div>
 
-<input type="text" id="nama" placeholder="Nama">
-<input type="number" id="umur" placeholder="Umur">
-<input type="text" id="diagnosa" placeholder="Diagnosa">
-<button onclick="tambahData()">Tambah</button>
-
-<h2>Data Pasien</h2>
-
-<table border="1">
-  <thead>
-    <tr>
-      <th>Nama</th>
-      <th>Umur</th>
-      <th>Diagnosa</th>
-      <th>Aksi</th>
-    </tr>
-  </thead>
-  <tbody id="tabel"></tbody>
-</table>
+  <div class="card">
+    <h2>Daftar Pasien</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Umur</th>
+          <th>Diagnosa</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="tabel"></tbody>
+    </table>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
+</html>

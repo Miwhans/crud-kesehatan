@@ -11,8 +11,8 @@ function tampilData() {
         <td>${item.umur}</td>
         <td>${item.diagnosa}</td>
         <td>
-          <button onclick="editData(${index})">Edit</button>
-          <button onclick="hapusData(${index})">Hapus</button>
+          <button style="background:orange;" onclick="editData(${index})">Edit</button>
+          <button style="background:red;" onclick="hapusData(${index})">Hapus</button>
         </td>
       </tr>
     `;
